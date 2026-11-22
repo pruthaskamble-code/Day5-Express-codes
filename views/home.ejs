@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Add : <a href="/add">Add Employee</a>
+    <br>
+    <ul>
+        <% result.forEach(i => { %>
+            <li>
+                <%= i.name %>   <%= i.salary %>   <%= i.dept %>
+            </li>
+        <% }); %>
+    </ul>
+
+    <br><br>
+    <table>
+        <th>
+            <tr>
+                <% result.forEach(i => { %>
+            </tr>
+        </th>
+        <td>
+            <tr>
+                <%= i.name %>   <%= i.salary %>   <%= i.dept %>
+            </tr>
+            <br>
+            <% }); %>
+        </td>
+    </table>
+</body>
+</html>
